@@ -1,0 +1,25 @@
+---
+layout: post
+title: ! 'Day 8: Getting Started with SFML and Code::Blocks'
+tags:
+- c
+- codeblocks
+- coding
+- semester off
+- sfml
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/f4CrN6
+  _wp_old_slug: ''
+---
+While I continue to play with Python, I am going to spend these last few posts talking about my initial steps into the realm of game programming. I am going to be using the <a href="http://www.sfml-dev.org/">SFML</a> API to handle graphics, windows, input, and audio. The IDE I will be using is <a href="http://www.codeblocks.org/">Code::Blocks</a>. The language I will be coding in will be C++.
+
+I have trouble getting SFML and Code::Blocks (MinGW) to play nicely together. Firstly, I found out that the version of MinGW/GCC that came with Code::Blocks was not compatible with SFML. I had to download the IDE and MiGW separately. Then in Code::Blocks, under Settings -> Compiler and debugger... -> Global compiler settings -> Toolchain executables, change the compiler directory to where you extracted MinGW to.
+
+After that point, I was able to compile a console-based text main for SFML, and run it successfully. However, I encountered a bizarre problem once I started to try to create a window. According to a <a href="http://www.sfml-dev.org/forum/viewtopic.php?t=3438&postdays=0&postorder=asc&start=0&sid=c3efdf2e5a85045e9439714f2d5141ff">post</a> on the SFML forums, new ATI Radeon drivers cause SFML-based applications to hang when a window is created. Apparently, a workaround is to link SFML statically rather than through DLL files. After compiling SFML and linking to those files, I found I was able to create a window without any errors, and to run the resulting .exe without any extra files.
+
+Tomorrow, I am going to try to draw stuff to the window!

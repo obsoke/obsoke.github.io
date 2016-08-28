@@ -1,0 +1,17 @@
+---
+layout: default
+title: blogs
+---
+
+<div class="blogs">
+    {% for post in site.posts %}
+    <div>
+        <h2 class="post-header">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <hr class="post-list-sep">
+    </div>
+    {% endfor %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>

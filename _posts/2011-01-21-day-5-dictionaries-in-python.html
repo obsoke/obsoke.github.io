@@ -1,0 +1,40 @@
+---
+layout: post
+title: ! 'Day 5: Dictionaries in Python'
+tags:
+- python
+- semester off
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/igSmno
+  _wp_old_slug: ''
+---
+The dictionary datatype in Python works like a hash table in Perl. It stores pairs of keys and values. It is very efficient at retrieving values when given a particular key. Here are a few examples of ways to use dictionaries in Python:
+
+[python]&gt;&gt;&gt; dict = {} # empty dictionary
+
+&gt;&gt;&gt; dict['a'] = 'hello' # adding new key/value pair: key 'a' value 'hello'
+&gt;&gt;&gt; dict['bob'] = 6 # keys can be strings and values can be anything - number, string...
+&gt;&gt;&gt; dict['a'] # getting value of a
+'hello'
+&gt;&gt;&gt; dict['bob']
+6
+&gt;&gt;&gt; dict[6] = 'frank' # keys can be integers as well
+&gt;&gt;&gt; dict.keys() # method to return all keys in dictionary
+['a', 'bob', 6]
+&gt;&gt;&gt; dict.values() # method to return values
+['hello', 6, 'frank']
+&gt;&gt;&gt; 'a' in dict # testing if key 'a' is in dict
+True
+&gt;&gt;&gt; 'x' in dict # testing if key 'x' is in dict
+False
+&gt;&gt;&gt; print dict # print contents of dictionary
+{'a': 'hello', 'bob': 6, 6: 'frank'}
+[/python]
+
+I like that it is very easy to just add new key/value pairs to a dictionary. I'm trying to finish an exercise using dictionaries and files in Python, so I will edit this post with my results once I finish it!

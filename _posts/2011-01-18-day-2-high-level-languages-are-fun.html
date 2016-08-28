@@ -1,0 +1,53 @@
+---
+layout: post
+title: ! 'Day 2: High-level Languages are Fun!'
+tags:
+- coding
+- google
+- python
+- semester off
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/fYqbwQ
+  _wp_old_slug: ''
+---
+The best way to learn something, especially in the programming realm, is with constant practice and use of the knowledge you have gained. That is why I feel these daily blogs are going to help me a lot in the end. I have been going through Google's Python Class and doing the exercises it provides. I am not used to high-level languages like Python, because it just makes everything so easy! I am used to fighting with a language like C or C++, and writing everything by hand! Maybe I've been doing it wrong. For example, one of the exercises had us code the following function:
+
+[python]# E. not_bad
+# Given a string, find the first appearance of the
+# substring 'not' and 'bad'. If the 'bad' follows
+# the 'not', replace the whole 'not'...'bad' substring
+# with 'good'.
+# Return the resulting string.
+# So 'This dinner is not that bad!' yields:
+# This dinner is good!
+def not_bad(s):
+  notNum = s.find('not')
+  badNum = s.find('bad')
+  if (notNum != -1 and badNum != -1) and notNum &lt; badNum:
+    newStringFirst = s[:notNum]
+    newStringSecond = s[badNum + 3:]
+    s = newStringFirst + 'good' + newStringSecond
+    
+  return s[/python]
+
+Lines 10 and 11 use the find method on string s to find the indexes where 'not' and 'bad' begin at. The find method will return -1 if there is no match, so I check to make sure there is a match for both words, and that 'not' comes before 'bad' in the string (starting index of 'not' must be lower than starting index of 'bad'). If those conditions are met, I split the string up around the 'not ... bad' substring using the awesome range operator, ':'. Line 13 assigns string s, starting from 0 (no value given with : operator means it starts at either the beginning or end of string, depending on whether its missing from the left or right hand side). Line 14's assignment starts right after the word 'bad' (position of b + 3) until the end of the string. These range operators make working with strings much easier. But even the way I coded it above wasn't high-level enough! This is how the author of the course, Nick Parlante, solved the problem:
+
+[python]def not_bad(s):
+  n = s.find('not')
+  b = s.find('bad')
+  if n != -1 and b != -1 and b &gt; n:
+    s = s[:n] + 'good' + s[b+3:]
+  return s
+[/python]
+
+I really need to think about writing code in Python with a different mindset. I am still over-thinking the problem; this solution is so simple and clean. Hopefully, more practice will condition me with the Pythonic mindset!
+
+Anyway, that is all for tonight. Tomorrow, I plan on finishing the Google lessons, so expect a post about lists, tuples, and file handling... along with an original sample program written by yours truly! 
+
+<strong>Edit on January 19th 2011:</strong> There are a few things I feel I need to clear up in the above post. The range operator [:] is actually called the slice operator in Python. The value on the left is starting index inclusive, the value on the right is the ending index exclusive.

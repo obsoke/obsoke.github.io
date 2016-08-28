@@ -1,0 +1,19 @@
+---
+layout: post
+title: ! 'The Road to xnaZero: Introduction, See Sharp Run'
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+---
+If the cringe-worthy pun in the post title didn't cause you to instantly close the browser tab, then I'd like to welcome you to the first in a series of posts that will document my experience developing my first 'serious' game. By 'serious', I mean that I'll be making a game that I design myself rather than remaking an arcade classic. It will (hopefully) also mean that I'll be selling the game on digital distribution services for a small price, although more likely than not it will be released for free. It's easy to talk about what will happen at upon completion  when just starting a long project, so I guess we'll see what happens at the end. If you were wondering, 'xnaZero' is my name for this project. No point of thinking of a name for a game before I know what it's about!
+
+My goal is to create a 2D platforming side-scroller. I'm thinking of keeping the scale of the actual game small, and trying to make it as fun as possible. I would really like to create a multiplayer PC game that can be played locally, as there are not enough of these (which makes sense, as sitting a few people in front of a computer to play on a relatively small monitor isn't the most ideal way to game. However, with most video cards these days coming with built-in HDMI out, it is incredibly easy to hook your PC up to a big screen TV, hook up a wireless gamepad or two and enjoy the comfort of a couch with the power of a PC. But I digress...). Right now, I'm more focused on learning how to actually program a game in this genre than designing the game itself.
+
+I've re-made Pong and Breakout, but the physics in both games are incredibly simplistic. I found myself a bit lost as to where to even begin with a 2D platformer. I haven't taken a physics class for 10 years and I don't remember a lot of the math from college and high school. I plan on studying both in the summer (I love <a title="Khan Academy" href="www.khanacademy.org/" target="_blank">Khan Academy</a>) but for now I'll be winging it, and learn as I go. Luckily, Microsoft offers a <a title="App Hub - platformer" href="http://create.msdn.com/en-US/education/catalog/sample/platformer" target="_blank">Sample Platformer</a> project source code for people like me to download and examine. I ended up integrating a bit of the code from Sample Platformer into project; in particular, the code for physics and collision detection. However, I don't plan on moving forward with the game until I understand exactly what I copied. That is what inspired this set of blog posts.
+
+To get things started, I thought I would look into a question I've had about C# for a while, which is:
+<h3>Why would I use properties instead of a public variable?</h3>
+While looking at the Sample Platformer source, I'd often see this declared in classes:

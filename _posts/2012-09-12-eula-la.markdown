@@ -1,0 +1,63 @@
+---
+tags: [open-source]
+layout: post
+title: EULA-la!
+tags: [open-source, osd600]
+---
+No one really likes to read the terms of service or EULA for any software/service they use. I don't think this is because they aren't interested in what they are agreeing with, but because the documents themselves are usually long and written in a difficult-to-understand legal language (almost intentionally, it seems). For OSD600, I took a look at two open source licenses, MIT and GPLv3, and one closed-source one, the Windows 7 Professional EULA. This is what I got out of reading these documents.
+
+### MIT
+The MTI license is short and sweet. You can find it [here](http://opensource.org/licenses/MIT). Essentially, it states that you can do whatever you wish with the source code, as long as you include the MIT license itself with your final application. It also states that there is no warranty so use it at your own risk, and that the authors are not responsible for how other people use their code. At least, that's what I got from it. I guess that means commercial software can use MIT-licensed code as long as they include a text file. That's a pretty good deal in my eyes.
+
+### GPLv3
+The GPLv3 license (found [here](http://opensource.org/licenses/GPL-3.0)) was pretty much the opposite of the MIT license in terms of readability. The document itself is huge! It's also written in pure legalease, making it a bit unfriendly to read. However, I did find a few interesting tidbits that I wanted to point out. From the preamble:
+
+> When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or **use pieces of it in new free programs**, and that you know you can do these things.
+
+From what I understand about the GPLv3, this is a very controversial point. I believe this means that I can only use GPLv3 licensed code in other programs which are open source. I don't think the end application needs to be GPLv3 (I feel like the MIT license would be sufficient) but this means any closed-source software can't legally use GPLv3 code. This is obviously a very extreme open source license, which is no surprise as it comes to us from Richard Stallman's [Free Software Foundation](http://www.fsf.org/).
+
+> Finally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. **To prevent this, the GPL assures that patents cannot be used to render the program non-free.**
+
+I'm not really sure how the GPL, or the FSF for that matter, can make a promise like this. If a huge company with a lot of money and an army of lawyers has a patent and decide to sue you for infringing with your GPLv3 licensed code, will a text file with the words "the GPL assures that patents cannot be used to render the program non-free" actually protect me from these lawyers? I'm not really sure, but it is a point I'm interested in... so expect a follow-up post with answers to that question in the future!
+
+I tried to read more of the license but as the license went on, the language became more dense and difficult to understand. For example:
+
+> A “User Product” is either (1) a “consumer product”, which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, “normally used” refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.
+
+What? I feel like this can be written in a much simpler and concise manner. I feel like the FSF had their own army of lawyers write this document. I gave up reading the GPLv3 after encountering huge walls of text similar to this.
+
+### Windows 7 Professional EULA
+
+This document was long but I found it easier to read than the GPLv3 in terms of language and layout. While there were a few strange points in the document, it was still quite boring to read. Anyway, here are some of said weird points:
+
+> License Model. The software is licensed on a per copy per computer basis. A computer is a physical hardware system with an internal storage device capable of running the software. **A hardware partition or blade is considered to be a separate computer.**
+
+I feel like calling a partition a 'computer' is a bit of a stretch, but I expect this is so Microsoft can sell as many licenses as possible. This also probably has to do with the way Windows uses product keys to activate. If I can only activate Windows once, how can I install it twice on different partitions?
+
+> Licensed Computer. **You may use the software on up to two processors on the licensed computer at one time.** Unless otherwise provided in these license terms, you may not use the software on any other computer.
+
+> Device Connections. You may allow up to **20 other devices** to access software installed on the licensed computer to use only File Services, Print Services, Internet Information Services and Internet Connection Sharing and Telephony Services.
+
+Again, more restrictions on what I can and cannot do with the operating system. I don't know anyone who has more than two physical processors on their desktop PCs, or with more than 20 devices that use sharing services, but it still sucks that they restrict this. I'm guessing this is so Microsoft can upsell me to the Enterprise version which probably supports these features. Gotta make money somehow, eh, Microsoft?
+
+> Validation verifies that the software has been activated and is properly licensed. It also verifies that no unauthorized changes have been made to the validation, licensing, or activation functions of the software. **Validation may also check for certain malicious or unauthorized software related to such unauthorized changes.**
+
+And later on:
+
+> (if malicious software is found), you may not be able to **use or continue to use the software or some of the features of the software,** or obtain certain updates or upgrades from Microsoft.
+
+Unlike the open source licenses, which seem to encourage modifying the application code, Microsoft not only discourages it but may possibly lock you out of the OS if you try it. Again, this probably has to do with the fact that they don't want people circumventing the activation and pirating the software. Still, 'malicious software' is a very general term that can be applied to anything Microsoft doesn't approve of.
+
+And of course, my favourite part. I expected this but it's still amusing:
+
+> SCOPE OF LICENSE. The software is licensed, not sold. This agreement only gives you some rights to use the features included in the software edition you licensed. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you may use the software only as expressly permitted in this agreement.
+
+That's right. You just pay for a limited license when you buy Windows and you have very limited rights in its use. That's it. Don't like it? Tough noogies.
+
+### Final Thoughts
+
+Comparing the open source licenses to the Windows EULA is a bit difficult. One is a license for a piece of software, and the open source licenses are for many different pieces of code available. I guess we can compare it to Linux distributions, which tend to be based on licenses such as GPL and a modified BSD (like [Debian](http://www.debian.org/legal/licenses/)). In that way, the license for Windows is extremely restrictive. However, the GPLv3 is also pretty restrictive in that if you use GPLv3 code, your software must be open source. Out of all the licenses I've looked at, I think my favourite would be the MIT. This is the license I would use for my own software (had I any to release).
+
+It would probably be easier to compare MIT with the GPLv3. I believe the MIT is much more in the spirit of open source software. The GPLv3 tries too hard to further its agenda, which makes it more restrictive than the MIT and even previous versions of the GPL.
+
+Now I know a little bit more about licensing! Hooray!

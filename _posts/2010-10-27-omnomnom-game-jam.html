@@ -1,0 +1,94 @@
+---
+layout: post
+title: Omnomnom, Game Jam
+tags:
+- game club
+- game dev
+- oop344
+- processingJS
+status: publish
+type: post
+published: true
+meta:
+  _syntaxhighlighter_encoded: '1'
+  _edit_last: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/9jo8jb
+  _wp_old_slug: ''
+---
+So today was the <a href="http://zenit.senecac.on.ca/wiki/index.php/Level_Up:_An_OpenWeb_Game_Jam">Level Up! Open Web Game Jam</a> at Seneca@York, and it was quite the educational experience. I ended up starting to make a game before realizing I was going about it entirely the wrong way!
+
+Before my failed game attempt, I was playing around with <a href="http://processingjs.org/">Processing.js</a> and seeing what I can do with it after only a few minutes of looking at documentation. The results of my first experiment are <a href="http://gamedev.dkxy.net/pjs/test/">here</a>. Here is the P.js code I used:
+
+[js]void setup() {
+  size(250, 250);
+  noStroke();
+}
+ 
+void draw() {
+  background(#CCCCCC);
+  int fColor = 50;
+  for(int i = 0; i &lt;= 200; i += 50){
+   fill(fColor);
+   rect(i, i, 50, 50);
+   fColor += 25;
+  }
+}[/js]
+
+The setup() method gets called first: the size of the HTML5 canvas is set to 250 by 250 pixels, and shape borders are turned off with the noStroke() method. Then the draw() method runs, and a for loop draws 5 squares diagonally across the canvas. It was very cool to draw on the canvas so easily.
+
+My attempt at a game can be found <a href="http://gamedev.dkxy.net/pjs/game/">here</a>. This is more of a proof-of-concept than a real game. The character, Stickguy, can be moved left and right with the left and right arrow keys. Unfortunately, he cannot stop himself from bouncing off the floor and ceiling... oh noes! The main problem with this proof-of-concept is that there is no data being manipulated in the 'game', just graphics:
+
+[js]void setup() {
+  size(cWidth, cHeight);
+  noStroke();
+  frameRate(60);
+}
+ 
+void draw() {
+    // erase last positon
+    clear();
+    
+    // re-draw level
+    drawLevel();
+    
+    // draw new position
+    fill(#666666);
+    rect(pX, pY, pW, pH);
+    bounce();
+    keyPressed();
+}
+
+void keyPressed(){
+  if(keyPressed){
+    if (keyCode == 39){
+        if (pX &lt; cWidth - pW) pX += 2;
+    } 
+    else if (keyCode == 37){
+        if (pX &gt; 0) pX -= 2;
+    }
+  }
+}
+
+void drawLevel(){
+  background(#000000);
+  fill(#CCCCCC);
+  rect(0, 0, 500, 10); // top
+  rect(0, 490, 500, 10); // bottom
+
+}
+
+void bounce(){
+    if(down == 0){ 
+        pY--;
+        if(pY &lt;= 10) down = 1;
+    }
+    else{
+        pY++;
+        if(pY &gt;= 490 - pH) down = 0;
+    }
+}[/js]
+
+As you can see, there is no real data in the program... all the arrow keys do is control where Stickguy is being drawn on the canvas. However, no 'Stickguy' exists in the program itself, so there is no real way to have him interact with the game world, something else which is exists purely as something drawn on a canvas and nowhere else. So I learned an important lesson of how <strong>not</strong> to make a game! Now that I've learned a few things, I plan on trying to make something fun and that is actually, you know... a real game. I recently came across an excellent set of links to libraries and engines that would make writing an HTML5 game much easier, and that can be found <a href="http://sites.google.com/site/html5gamejam/engines">right here</a>.
+
+Big thanks to Andor, Cathy and Al on the interesting talks and for hosting the event. The talk about the the Audio API; I can see many possibilities on how to use it in online web games. Hopefully more people show next year!

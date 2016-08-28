@@ -1,0 +1,43 @@
+---
+layout: post
+title: ! 'game dev post-mortem: pong'
+tags:
+- coding
+- cpp
+- game dev
+- pong
+- post-mortem
+- sfml
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  yourls_shorturl: http://is.gd/IgINdw
+  _syntaxhighlighter_encoded: '1'
+---
+School has kept me busy during the past four months, but somehow between assignments I managed to find the time to complete my very first game! I re-created the classic arcade game, Pong. It was definitely a great learning experience, so I decided to blog about a few of the things I learned about during this project. I finished the project a few weeks ago so the project is not as fresh in my mind as it should be when writing a post like this. This post will be shorter than the examination of my next project upon completion.
+
+<strong>Engine
+</strong>Writing your first game is no easy task, but writing your first game and engine at the same time is even more of a challenge. I believe that while writing the game and engine at the same time will take more time and be potentially confusing at first, one will understand more about game programming and be better off for it. I have always believed that doing things the hard way first will give you a better understanding of how a particular process works. If you are getting into game development, you should know how each of your tools or your engine works in order to get the most out of that tool or engine.
+
+Writing a small, simple game like Pong can end up being a large project. Seeing the big picture before you have made your first game is very difficult. It took a while just to get out of the engine planning and design phase and into the actual development of the game. For example, should all my sprites inherit from a base 'Sprite' class? If so, what methods and member variables should the base class have? Thankfully, my system design class in school helped me solve this one. In my project, there is an 'Entity' base class which consists solely of the methods and member variables common to all sprites. I made the decision to leave the X/Y/width/height of the Entity public; declaring them as private yet writing setter and getter methods for each of these member variables seemed like a waste of code. If a member variable is meant to be private, why have setters or getters for it? Doesn't that defeat the purpose of encapsulation? I believe it does, so I just avoided that route completely.
+
+I ended up having a main Game class which consisted of the game window and an event handler. I created a singleton State Manager to manage switching between different game states. Each state, or screen, handled its own objects, draw and update loops. For a small scale project like Pong, this organization seemed to work well but having tons of subclasses of 'State' for each screen in a large game seems like it would get messy quickly. I am not sure if there is a better way to write a state manager; this is something I will have to research for my next project.
+
+<strong>C++
+</strong>I enjoy coding in C++. It's a powerful language, and while compiler errors can be cryptic and runtime errors difficult to debug at times (especially if the error is memory-related), the Internet has so much information on the language and fixing errors that a little searching can solve most problems. SFML was quite pleasant to work with. The API had enough documentation on its homepage. Some of my peers at school have worked with SFML before, so having a real-life resource to go to when I encountered a problem really helped. If you don't know anyone in person who has worked with SFML, I suggest the SFML forums.
+
+One small (and easily-solved) problem I had was figuring out how to initialize a reference member variable of a class. It cannot be done by simply saying 'ref = &amp;objectRefPointsTo' in the body of a class constructor. To initialize a reference member variable of a class, you must use initialization lists. Here is an example:
+
+[cpp]Object&amp; mRef; // reference member variable
+
+// constructor for class Foo
+Foo(Object ref, int a, int b) : mRef(ref) { ... }[/cpp]
+
+The member variable 'mRef' is directly initialized through the constructor's initialization list.
+
+<strong>Closing Thoughts
+</strong>SFML and C++ are great choices for multi-platform PC game development. I got my feet wet with game development, and it was very fun and satisfying to go from simply displaying a stationary sprite on the screen to getting a full game working with different screen states.
+
+If you are interested in seeing the completed project, you can find links to the binaries and source code on my <a title="Pong" href="http://dale.io/pong/">Pong project page</a>.

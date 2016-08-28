@@ -1,0 +1,44 @@
+---
+layout: post
+title: A little taste of conio.h
+tags:
+- oop344
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/9tp5Zf
+  _wp_old_slug: ''
+---
+At the end of my last OOP344 post, I said I'd be exploring the ncurses.h library a little bit, but my friend Rainulf has already done so on his own blog. He does a good job of explaining some of the functions and data types used in our OOP344 I/O assignment so if you are interested, <a href="http://rainulf.ca/post.php?id=19">click here</a> to check out what he has to say about ncurses!
+
+I have decided to instead explore some of the functions and data types used in conio.h, as it was my responsibility in my group to code the simple I/O functions for the Borland C++ compiler. conio.h is an old library used for console input and output during the MS-DOS days. Here are just a few of the functions and data types declared in the header:
+
+[c]clrscr();[/c]
+Clears the screen and returns the cursor to its default position (0, 0 or top left corner of console).
+
+[c]    struct text_info x;
+    gettextinfo(&amp;x);[/c]
+
+Structure text_info holds information about the console window, including cursor coordinates, screen width and height (<a href="http://conio.sourceforge.net/docs/html/structtext__info.html">more info</a>). The gettextinfo function accepts the address of a text_info structure as an argument and then fills that structure with information about the current console window (<a href="http://docs.embarcadero.com/products/rad_studio/delphiAndcpp2009/HelpUpdate2/EN/html/devwin32/gettextinfo_xml.html">more info</a>). 
+
+[c]int key = getch();[/c]
+
+In this example, getch reads a character from the console, and then returns the ASCII code for the character read to the integer named key (<a href="http://msdn.microsoft.com/en-us/library/078sfkak(v=vs.80).aspx">windows-specific info on _getch, still applies to the conio version</a>).
+
+[c]gotoxy(10,5);[/c]
+
+gotoxy(x, y) does pretty much what its name suggets: moves the cursor to column x, row y on the console. In the example above, the cursor would be moved to column 10 of row 5.
+
+[c]putch(c);[/c]
+
+putch(c) will write character c to where the cursor is currently located within the console, and then advance cursor position one column forward (<a href="http://msdn.microsoft.com/en-us/library/azb6c04e(v=VS.80).aspx">windows-specific info on _putch, still applies to the conio version</a>).
+
+[c]cputs(s);[/c]
+
+cputs(s) will write string s to where the cursor is currently located within the console, and then advance cursor position one column forward (<a href="http://msdn.microsoft.com/en-us/library/3w2s47z0(v=VS.80).aspx">windows-specific info on _putch, still applies to the conio version</a>).
+
+For more information about conio.h, check <a href="http://conio.sourceforge.net/">this website</a>.

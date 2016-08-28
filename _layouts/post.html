@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<artcle class="post">
+    <header class="post-header">
+        {% if page.header %}
+        <img class="post-header-image" alt="{{page.headertext}}" src="/static/images/headers/{{ page.header }}">
+        {% endif %}
+        <h1 class="post-title">{{ page.title }}</h1>
+        <h4 class="post-date">published {{ page.date | date_to_string }}</h4>
+    </header>
+    <div class="post-content content">
+        {{ content }}
+    </div>
+</artcle>

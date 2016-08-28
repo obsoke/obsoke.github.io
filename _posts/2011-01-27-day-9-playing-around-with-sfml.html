@@ -1,0 +1,53 @@
+---
+layout: post
+title: ! 'Day 9: Playing around with SFML'
+tags:
+- c
+- game dev
+- semester off
+- sfml
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/fMlcmg
+  _wp_old_slug: ''
+---
+Now that I have SFML, GCC and Code::Blocks playing nicely on my computer, I spent a little bit of time seeing what I can do with SFML. I wish that SFML had a set of tutorials similar to<a href="http://lazyfoo.net/SDL_tutorials/index.php"> Lazy Foo's SDL tutorials</a> but the <a href="http://www.sfml-dev.org/tutorials/1.6/window-window.php">tutorials on SFML's site</a> are not too bad. After following the tutorials, I managed the following:
+[caption id="attachment_359" align="alignnone" width="300" caption="A game involving a cat floating in nothingness, questioning his own existence."]<a href="http://dale.io/wp-content/uploads/2011/01/catthegame.png"><img src="http://dale.io/wp-content/uploads/2011/01/catthegame-300x225.png" alt="Breakthrough in graphics" title="Cat: The Game" width="300" height="225" class="size-medium wp-image-359" /></a>[/caption]
+Sure, it isn't a lot. Actually, it's just a small sprite of a cat being loaded and drawn onto an 800x600-sized window. That's it. Here is the source:
+[cpp]#include &lt;SFML/Graphics.hpp&gt;
+
+int main(int argc, char** argv)
+{
+    sf::RenderWindow App(sf::VideoMode(800, 600, 32), &quot;Cat: The Game&quot;); // the window
+    sf::Image image;
+    if(!image.LoadFromFile(&quot;small_cat_0.jpg&quot;))
+    {
+        App.Close();
+    }
+    sf::Sprite sprite;
+    sprite.SetImage(image);
+    sprite.SetX(100);
+    sprite.SetY(200);
+    while(App.IsOpened())
+    {
+        sf::Event event; // event catcher
+        if(App.GetEvent(event)) // if there is an event in the stack returns true, otherwise returns false
+        {
+            if(event.Type == sf::Event::Closed) // if user closed the box by clicking the close button
+                App.Close();
+        }
+
+        App.Clear();
+        App.Draw(sprite);
+        App.Display();
+    }
+    return 0;
+}[/cpp]
+This is the result of me playing around with SFML for around 20 minutes. First, an instance of a RenderWindow (window capable of... rendering!) object is created, being passed window size, bpp, and window title. Then an image object is created, with the cat loaded into that image from a local file. If the image load fails, the program exits. Otherwise, a sprite object is created and then assigned the cat image. I have not really played around with the sprite class that much yet but the <a href="http://www.sfml-dev.org/documentation/1.6/classsf_1_1Sprite.htm">documentation</a> for the class shouldn't make it difficult. I give x and y coordinates for the image, and then enter the main loop. An event handler is created, and is then checked to see if the user exits the application via the close button or not. If not, it just clears the screen and re-draws the application and cat image.
+
+It isn't much, but it is a start! I am trying to think of ways to encapsulate SFML into a basic game engine. Tomorrow, I should have something that could at least be called 'interactive' if not a 'game'.

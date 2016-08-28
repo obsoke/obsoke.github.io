@@ -1,0 +1,52 @@
+---
+layout: post
+title: Decoding (Initially) Cryptic Windows Functions and Types
+tags:
+- oop344
+status: publish
+type: post
+published: true
+meta:
+  _syntaxhighlighter_encoded: '1'
+  _edit_last: '1'
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/bNDKxw
+  _wp_old_slug: ''
+---
+As we saw in class on Friday, initializing our I/O libraries on Windows requires the use of strange data types and functions that I have never encountered before. I like knowing how the tools I am using work, so I decided to figure out what they mean and then share that info with the rest of you! Here is a snippet of code from iol.c that Fardad coded on Friday:
+
+[cpp]
+#include &lt;windows.h&gt; 
+#include &lt;conio.h&gt;
+
+HANDLE consh;
+CONSOLE_SCREEN_BUFFER_INFO bufinfo;
+
+void iol_init(void){ 
+  consh = GetStdHandle(STD_OUTPUT_HANDLE);
+  GetConsoleScreenBufferInfo(consh, &amp;bufinfo);
+}
+[/cpp]
+
+I had a bit of trouble finding a concrete definition of a 'HANDLE', as MSDN doesn't explain it so well, so if I get this wrong, please correct me! From what I gather, a 'HANDLE' is a variable type that refers to a data structure indirectly. It can  refer to a pointer, or a structure, or whatever. I am guessing it is indirectly accessed for safety purposes, as going into memory directly to adjust the data structure can be dangerous. Line 08 makes use of this 'HANDLE' by assigning the return value of a function called 'GetStdHandle' to it.
+
+'GetStdHandle' is pretty simple: it returns a handle to a specific standard device. In this case, it is a standard output handle (as the argument passed, 'STD_OUTPUT_HANDLE', suggests) which by default points to the console screen buffer. We can now use the variable 'consh' to access an output buffer to the console. One of the reasons we include the 'windows.h' header file is to have access to data types like 'HANDLE's, and functions like 'GetStdHandle', which are Windows-specific. For more info about 'GetStdHandle', check <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(GETSTDHANDLE);k(IOL_INIT(VOID));k(DevLang-%22C%2B%2B%22)&rd=true">its MSDN article</a>.
+
+On Line 05, another variable is defined: a 'CONSOLE_SCREEN_BUFFER_INFO'. This is pretty self-explanatory as well: it creates a structure that holds information about a console window. This structure holds information such as console window size, console buffer size, cursor position, and maximum window size. I am pretty sure that when an instance of this data type is created with the name of 'bufinfo', it is an empty structure. This structure is filled by using the last unknown in this code snippet, the function 'GetConsoleScreenBufferInfo'. For more information on 'CONSOLE_SCREEN_BUFFER_INFO', check out <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(CONSOLE_SCREEN_BUFFER_INFO);k(DevLang-%22C%2B%2B%22)&rd=true">its MSDN article.</a>
+
+'GetConsoleScreenBufferInfo' accepts two arguments: the first is a 'HANDLE' to the console screen buffer from which we will fill our 'CONSOLE_SCREEN_BUFFER_INFO' from, and the second is a pointer to our 'CONSOLE_SCREEN_BUFFER_INFO' which we will populate. Now we will know how many rows/columns our console screen buffer has, which will allow us to code some of the more complex functions later on with relative ease. For more information on 'GetConsoleScreenBufferInfo', check out <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(GETCONSOLESCREENBUFFERINFO);k(DevLang-%22C%2B%2B%22)&rd=true">its MSDN page</a>.
+
+I'm just going to talk about one more data type and function, found in this 'iol_movecur(int, int)' function also coded by Fardad on Friday:
+
+[cpp]
+void iol_movecur(int r, int c){
+  COORD coord;
+  coord.X = c;
+  coord.Y = r;
+  SetConsoleCursorPosition(consh, coord);
+}
+[/cpp]
+
+A 'COORD' is a structure containing two short integers: X and Y. They are X and Y coordinates. It's that simple. 'SetConsoleCursorPosition' takes a 'HANDLE' to an output console buffer as its first argument and a 'COORD' structure with X (columns) and Y (rows) values of where the cursor should be placed. I don't think it requires more explanation, but more information on <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(COORD);k(%22IOL_MOVECUR(INT+R,+INT+C)%22);k(DevLang-%22C%2B%2B%22)&rd=true">'COORD's can be found here</a>, and more info on <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(SETCONSOLECURSORPOSITION);k(%22IOL_MOVECUR(INT+R,+INT+C)%22);k(DevLang-%22C%2B%2B%22)&rd=true">'SetConsoleCursorPosition' can be found here</a>.
+
+Wow, this post ended up much longer than initially expected. Keep in mind, this is by no means a complete explanation about the functions and data types above, just my basic understanding after a little bit of research. Again, if any of it is wrong, please comment and let me know! Otherwise, I think later this week I may explore some of the Linux functions... until then!

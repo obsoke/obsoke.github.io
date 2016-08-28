@@ -1,0 +1,44 @@
+---
+layout: post
+title: Getting wise with Bitwise Operators
+tags:
+- oop344
+status: publish
+type: post
+published: true
+meta:
+  _wp_old_slug: ''
+  yourls_tweeted: '1'
+  yourls_shorturl: http://bit.ly/b781Mo
+  _edit_last: '1'
+---
+Aren't my post titles witty? Har har..
+
+Anywho, today I am going to talk about a few of the bitwise operators available in C. The purpose of bitwise operators are to manipulate data on the smallest level possible: bit-by-bit. Everyone involved in programming should know that a bit is like a switch that can be turned on (1) or off (0). Binary code is made up of a sequence of bits, which itself is the foundation of computing.
+
+The <strong>&amp;</strong> (bitwise and) operator will take two arguments, and compare their bit representations. If corresponding bits of both arguments are 1, it sets that corresponding bit in the return value to 1; otherwise, it sets that bit in the return value to 0. For example, evaluating 10 &amp; 88:
+<code>10=00001010
+88=01011000
+Result: 00001000 = 8</code>
+
+As you an see, only the 4th position bit of each number is 1, so the result is 1000, or 8 in decimal.
+
+The <strong>&#124;</strong> operator (bitwise or) works in a similar fashion, except it returns a 0 if corresponding bits are both 0; otherwise, it returns 1. For example, 77 | 108:
+<code>077=1001101
+             108=1101100
+Result: 1101101 = 109</code>
+
+0 and 0 only occurs twice when comparing 77 and 108, therefore only those corresponding bits are 0 in the returned value. All other bits are 1.
+
+The <strong>&#94;</strong> operator (bitwise exclusive or) will set the return value's corresponding bit to 1 if the two argument's corresponding bit are different (1 and 0, or 0 and 1). For example, 5 ^ 17:
+<code>05=00101
+17=10001
+Result: 10100 = 20</code>
+
+The <strong>&#126;</strong> operator (bitwise not) is quite simple: it simply flips all the bits to the opposite of its current status (1 becomes 0, 0 becomes 1). For example, ~50:
+<code>50=110010
+~50: 11111...001101 = -51</code>
+
+Coincidentally, I found this interesting blog post off of reddit called '<a href="http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know">Low Level Bit Hacks You Absolutely Must Know</a>'. This post containins a number of useful ways to use bitwise operators, such as checking if an integer is even or odd, or flipping certain bits. Check it out, hopefully you will learn something new like I did! Oh, I just found another post with similar bitwise tricks called '<a href="http://graphics.stanford.edu/~seander/bithacks.html">Bit Twiddling Hacks</a>', check that one out too!
+
+This week is FSOSS! How exciting! Except some blog posts about it later, along with the results of my entry in the <a href="http://zenit.senecac.on.ca/wiki/index.php/Level_Up:_An_OpenWeb_Game_Jam">Level Up! game jam</a>. Until then!

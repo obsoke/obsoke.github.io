@@ -1,0 +1,192 @@
+---
+---
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+:root {
+    --base00: #181818;
+    --base01: #282828;
+    --base02: #383838;
+    --base03: #585858;
+    --base04: #b8b8b8;
+    --base05: #d8d8d8;
+    --base06: #e8e8e8;
+    --base07: #f8f8f8;
+    --base08: #ab4642;
+    --base09: #dc9656;
+    --base0A: #f7ca88;
+    --base0B: #a1b56c;
+    --base0C: #86c1b9;
+    --base0D: #7cafc2;
+    --base0E: #ba8baf;
+    --base0F: #a16946;
+
+    --main-bg-colour: var(--base00);
+    --alt-bg-colour: var(--base01);
+    --main-fg-colour: var(--base05);
+    --alt-fg-colour: var(--base04);
+    --link-colour: var(--base09);
+}
+
+body {
+    color: var(--main-fg-colour);
+    background-color: var(--main-bg-colour);
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: var(--link-colour);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 4em;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.title a {
+    color: var(--main-fg-color);
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: var(--link-colour);
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width: 900px) {
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            padding: 0.25em 0.25em;
+        }
+    }
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+    .nav li {
+        display: inline-block;
+        margin-bottom: 0;
+        padding-right: 15px;
+    }
+}
+
+.wrapper {
+    padding: 0 10px;
+}
+
+@media (min-width: 575px) {
+    .wrapper {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        width: 800px;
+        padding: 0 20px;
+    }
+}
+
+header {
+    padding: 1em;
+}
+
+@media (min-width: 900px) {
+    header {
+        padding: 30px;
+    }
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 1em;
+    border: 1px solid white;
+}
+
+/* thanks to https://css-tricks.com/examples/hrs/ for the hr style */
+.post-list-sep {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(220, 150, 86, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 20px;
+}
+
+.post-header {
+    margin-bottom: 2px;
+}
+
+.rss-subscribe {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.post-meta {
+    font-size: small;
+}
+
+.post {
+    .post-header {
+        text-align: center;
+    }
+
+    .post-header-image {
+        width: 100%;
+    }
+
+    .post-date {
+        margin-bottom: 0;
+    }
+}
+
+.content {
+    line-height: 1.5em;
+}

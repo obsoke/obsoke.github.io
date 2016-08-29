@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
+{% assign current = page.date | date: "%s" %}
+{% assign cutoff = site.old_post_cutoff | date: "%s" %}
 <artcle class="post">
+    {% if current < cutoff %}
+    <div class="old-post-warning">
+        This post has been migrated from an old server & blog system. Some things may look strange, such as formatting. Some links and images may be broken. I will try getting around to fixing it ASAP.
+    </div>
+    {% endif %}
     <header class="post-header">
         {% if page.header %}
         <img class="post-header-image" alt="{{page.headertext}}" src="/static/images/headers/{{ page.header }}">

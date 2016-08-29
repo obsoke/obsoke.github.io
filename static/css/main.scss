@@ -1,63 +1,59 @@
 ---
 ---
+// base16 - dark
+$base00: #181818;
+$base01: #282828;
+$base02: #383838;
+$base03: #585858;
+$base04: #b8b8b8;
+$base05: #d8d8d8;
+$base06: #e8e8e8;
+$base07: #f8f8f8;
+$base08: #ab4642;
+$base09: #dc9656;
+$base0A: #f7ca88;
+$base0B: #a1b56c;
+$base0C: #86c1b9;
+$base0D: #7cafc2;
+$base0E: #ba8baf;
+$base0F: #a16946;
+
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family: 'Open Sans', sans-serif;
 
-$spacing-unit:     30px;
+$main-text-colour: $base05;
+$main-background-colour: $base00;
+$alt-text-colour:  $base04;
+$alt-background-colour: $base01;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$base-font-size: 1.1em;
+$nav-font-size: 1.25em;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$line-height: 1.5;
+
+$link-colour: $base09;
+/* $accent-colour: $base0C; */
+$accent-colour: $base0C;
 
 // Width of the content area
 $content-width:    800px;
+$content-width-small: 550px;
 
-$on-palm:          600px;
+$on-palm:          575px;
 $on-laptop:        800px;
 
-:root {
-    --base00: #181818;
-    --base01: #282828;
-    --base02: #383838;
-    --base03: #585858;
-    --base04: #b8b8b8;
-    --base05: #d8d8d8;
-    --base06: #e8e8e8;
-    --base07: #f8f8f8;
-    --base08: #ab4642;
-    --base09: #dc9656;
-    --base0A: #f7ca88;
-    --base0B: #a1b56c;
-    --base0C: #86c1b9;
-    --base0D: #7cafc2;
-    --base0E: #ba8baf;
-    --base0F: #a16946;
-
-    --main-bg-colour: var(--base00);
-    --alt-bg-colour: var(--base01);
-    --main-fg-colour: var(--base05);
-    --alt-fg-colour: var(--base04);
-    --link-colour: var(--base09);
-}
-
 body {
-    color: var(--main-fg-colour);
-    background-color: var(--main-bg-colour);
+    font-family: $base-font-family;
+    color: $main-text-colour;
+    background-color: $main-background-colour;
+    font-size: $base-font-size;
+
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 a {
-    color: var(--link-colour);
+    color: $link-colour;
     text-decoration: none;
 }
 
@@ -65,128 +61,137 @@ a:hover {
     text-decoration: underline;
 }
 
-.title {
-    font-size: 4em;
-    text-align: center;
-    margin: 20px 0 10px;
-}
+header {
+    padding: 1em;
 
-.title a {
-    color: var(--main-fg-color);
-    text-decoration: none;
-}
+    .logo-link {
+        display: block;
+        text-align: center;
+    }
 
-.title a:hover {
-    color: var(--link-colour);
-    text-decoration: none;
-}
+    .logo {
+        border: 2px solid $accent-colour;
+        border-radius: 50%;
+        text-align: center;
+        margin: 20px 0 10px;
+    }
 
-.nav {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-@media (min-width: 900px) {
     .nav {
-        flex-direction: row;
-        justify-content: center;
+        font-size: $nav-font-size;
+
+        list-style: none;
+        padding-left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 
         a {
             padding: 0.25em 0.25em;
         }
+
+        li {
+            margin: 10px 0;
+        }
     }
-}
 
-.nav li {
-    margin-bottom: 10px;
-}
-
-@media (min-width: 900px) {
-    .nav li {
-        display: inline-block;
-        margin-bottom: 0;
-        padding-right: 15px;
-    }
-}
-
-.wrapper {
-    padding: 0 10px;
-}
-
-@media (min-width: 575px) {
-    .wrapper {
-        width: 550px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (min-width: 800px) {
-    .wrapper {
-        width: 800px;
-        padding: 0 20px;
-    }
-}
-
-header {
-    padding: 1em;
-}
-
-@media (min-width: 900px) {
-    header {
+    @media (min-width: $on-laptop) {
         padding: 30px;
+
+        .nav {
+            flex-direction: row;
+            justify-content: center;
+
+            li {
+                display: inline-block;
+                margin-bottom: 0;
+                padding-right: 15px;
+            }
+        }
     }
 }
 
 footer {
     padding: 30px;
     text-align: center;
+    font-size: 0.8em;
 }
 
-.logo {
-    border-radius: 1em;
-    border: 1px solid white;
+.wrapper {
+    padding: 0 10px;
+
+    @media (min-width: $on-palm) {
+        width: $content-width-small;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: $on-laptop) {
+        width: $content-width;
+        padding: 0 20px;
+    }
 }
 
-/* thanks to https://css-tricks.com/examples/hrs/ for the hr style */
-.post-list-sep {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(220, 150, 86, 0.75), rgba(0, 0, 0, 0));
-    margin-top: 20px;
+
+.content {
+    line-height: $line-height;
 }
 
-.post-header {
-    margin-bottom: 2px;
-}
+.blogs {
+    .blog-header {
+        margin-bottom: 2px;
+    }
 
-.rss-subscribe {
-    text-align: center;
-    padding: 20px 0;
-}
+    .blog-meta {
+        font-size: small;
+    }
 
-.post-meta {
-    font-size: small;
+    /* thanks to https://css-tricks.com/examples/hrs/ for the hr style */
+    .blog-list-sep {
+        margin-top: 20px;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right,
+                                          rgba(0, 0, 0, 0),
+                                          rgba($accent-colour, 0.75),
+                                          rgba(0, 0, 0, 0)
+                                         );
+    }
+
+    .rss-subscribe {
+        text-align: center;
+        padding: 20px 0;
+    }
 }
 
 .post {
     .post-header {
         text-align: center;
+        font-style: italic;
     }
 
     .post-header-image {
         width: 100%;
+        border: 1px solid #333;
     }
 
     .post-date {
+        color: $alt-text-colour;
         margin-bottom: 0;
+    }
+
+    .old-post-warning {
+        color: $alt-text-colour;
+        background-color: $alt-background-colour;
+        padding: 0.5em;
+        border-radius: 5px;
+        font-style: italic;
     }
 }
 
-.content {
-    line-height: 1.5em;
+code:not([class^="language-"]) {
+    color: $alt-text-colour;
+    background-color: $alt-background-colour;
+    padding: 0.25em;
 }

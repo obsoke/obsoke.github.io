@@ -21,6 +21,7 @@ url: "http://dale.io" # the base hostname & protocol for your site
 twitter_username: its_d10p
 github_username:  d10p
 highlighter: rouge
+permalink: none
 
 # exclude files like gemfile from final build
 exclude: ["Gemfile", "Gemfile.lock"]
@@ -28,3 +29,21 @@ timezone: America/Toronto
 
 # Build settings
 markdown: kramdown
+
+old_post_cutoff: 2012-01-23
+
+# front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "blog"
+      author: "Dale Karp <dale@dale.io>"

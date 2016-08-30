@@ -32,6 +32,14 @@ markdown: kramdown
 
 old_post_cutoff: 2012-01-23
 
+# plugins
+gems:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed
+
 # front matter defaults
 defaults:
   -

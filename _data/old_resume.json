@@ -1,0 +1,297 @@
+{
+  "name": "Dale Karp",
+
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.4.0"
+  },
+
+  "info": {
+    "label": "Senior Developer",
+    "characterClass": "Programmer",
+    "brief": "Dale Karp is a web architect specializing in full stack development with JavaScript. Whether it's a small feature for a currently existing site or an entire applications with complex features, Dale makes use of modern best practices to deliver high-quality products to his clients."
+  },
+
+  "contact": {
+    "website": "http://dale.io",
+    "phone": "(647) - 701 - 4151",
+    "email": "dale@dale.io"
+  },
+
+  "location": {
+    "city": "Toronto",
+    "country": "Canada"
+  },
+
+  "projects": [
+    {
+      "title": "Mozilla Firefox - WebVTT",
+      "category": "FOSS",
+      "role": "contributor",
+      "start": "2012-09",
+      "end": "2013-04",
+      "summary": "A W3C standard for displaying timed text with the <track> element.",
+      "highlights": [
+        "Worked with a team of seven others to implement the WebVTT standard into the Mozilla Firefox browser",
+        "Wrote some of the C++ DOM implementation for the track element in Mozilla Firefox",
+        "Fixed some bugs in the Node-based WebVTT validator",
+        "Presented our work as a group live on [Air Mozilla](https://air.mozilla.org/webvtt-web-video-text-tracks/)"
+      ],
+      "keywords": ["C++", "Gecko Engine", "FOSS"]
+    },
+    {
+      "title": "Giffy",
+      "category": "personal",
+      "role": "creator",
+      "repo": "https://github.com/d10p/giffy",
+      "description": "GIF Upload & Creation Service",
+      "summary": "Created the backend and frontend for an online GIF uploading & creation web service.",
+      "start": "2013",
+      "end": "2013",
+      "keywords": ["JavaScript", "Node.js", "Express", "PostgreSQL", "Angular1"],
+      "highlights": [
+        "Forked and added features to an open source Amazon S3 uploader to enable direct-to-S3 uploads from the browser",
+        "Implemented ability to create GIFs in the browser using a webcam and the WebRTC API"
+      ]
+    },
+    {
+      "title": "Jump Around",
+      "category": "personal",
+      "role": "creator",
+      "start": "2014",
+      "repo": "https://github.com/d10p/jumparound",
+      "summary": "A simple 2D platformer game in JavaScript using the Phaser game framework",
+      "keywords": ["JavaScript", "Phaser.js"]
+    }
+  ],
+
+  "social": [
+
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "d10p",
+      "url": "https://github.com/d10p"
+    }
+
+  ],
+
+  "employment": {
+
+    "history": [
+
+      {
+        "employer": "Self-employed",
+        "position": "Freelance Full-stack Developer",
+        "start": "2012-01",
+        "highlights": [
+          "Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system",
+          "Implemented the client-side code for a shopping cart system for [**BBbarfly.com**](http://bbbarfly.com/)"
+        ]
+      },
+
+      {
+        "employer": "Mozilla Foundation",
+        "url": "//mozilla.org",
+        "position": "Front-nd Developer (contract)",
+        "summary": "Worked with the [**Webmaker.org**](//webmaker.org) team",
+        "start": "2013-05",
+        "end": "2014-01",
+        "keywords": ["HTML", "JavaScript", "CSS", "GitHub", "Bugzilla", "Meetings"],
+        "highlights": [
+          "Used designer-built wireframes to build pages for the Webmaker homepage leading up to and after its launch",
+          "Assisted in implementing features and fixing cross-browser bugs for the upcoming Webmaker Profiles application",
+          "Added new features and fixed existing bugs in a large codebase inherited by the project",
+          "Participated in code reviews and bug triages"
+        ]
+      },
+
+      {
+        "employer": "Centre for Development of Open Technology (CDOT)",
+        "position": "Research Developer",
+        "summary": "Worked with the [**BigBlueButton**](http://bigbluebutton.org/) team",
+        "start": "2013-01",
+        "end": "2013-04",
+        "keywords": ["CoffeeScript", "Node.js","Backbone.js","Remote Team"],
+        "highlights": [
+          "Assisted in converting the Flash-based BigBlueButton online lecturing system client to HTML5",
+          "Fixed client side bugs in an application written with CoffeeScript, Node and Backbone.js"
+        ]
+      },
+
+      {
+        "employer": "Firmex",
+        "url": "http://www.firmex.com/",
+        "position": "Developer (co-op)",
+        "start": "2011-09",
+        "end": "2012-04",
+        "keywords": ["JavaScript","C#","Microsoft SQL","Standups"],
+        "highlights": ["Supervised roll-out of Dunder Mifflin Infinity website.", "Performed mission-critical system backups and ", "Etc."]
+      },
+
+      {
+        "employer": "Seneca College Learning Centre",
+        "position": "Peer Tutor",
+        "start": "2010-10",
+        "end": "2011-08",
+        "keywords": ["C", "C++","Perl", "GNU/Linux"],
+        "highlights": [
+          "Helped first and second year Computer Studies students understand programming concepts and syntax",
+          "Helped students become confident enough to solve problems on their own"
+        ]
+      }
+    ]
+
+  },
+
+  "education": {
+
+    "history": [
+
+      {
+        "institution": "Seneca College",
+        "start": "2010-01",
+        "end": "2013-04",
+        "grade": "4.0",
+        "summary": "A multiline summary of the education.",
+        "curriculum": ["Course 1", "Course 2", "Course 2"]
+      },
+
+      {
+        "institution": "York University",
+        "title": "",
+        "start": "2008-09",
+        "end": "2009-12",
+        "summary": "Successfully completed four semesters in a **Philosophy / Political Science** Double Major BA"
+      }
+    ]
+
+  },
+
+  "skills": {
+
+    "sets": [
+      {
+        "name": "Web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript", "HTML 5", "CSS", "LAMP", "MVC", "REST"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "master",
+        "skills": [
+          "Node.js", "Angular.js", "jQuery", "Bootstrap", "React.js", "Backbone.js"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MySQL", "PostgreSQL", "NoSQL", "ORM", "Hibernate"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "intermediate",
+        "skills": [
+          "AWS", "EC2", "RDS", "S3", "Azure", "Dropbox"
+        ]
+      },
+      {
+        "name": "Project",
+        "level": "beginner",
+        "skills": [
+          "Agile", "TFS", "JIRA", "GitHub", "Unified Process", "MS Project"
+        ]
+      }
+    ],
+
+    "list": [
+      {
+        "name": "C++",
+        "id": "1",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "9",
+        "years": 7,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Ruby",
+        "id": "2",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "9",
+        "years": 7,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Xcode",
+        "summary": "Xcode 6 development.",
+        "level": "5",
+        "years": "3"
+      },
+      {
+        "name": "Linux",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "advanced",
+        "years": "4+"
+      },
+      {
+        "name": "Agile",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "B+",
+        "years": 2
+      }
+    ]
+  },
+
+  "samples": [
+    {
+      "title": "Asteroids",
+      "summary": "A browser-based space shooter built on Three.js.",
+      "url": "http://janef.me/asteroids",
+      "date": "2014-09"
+    },
+    {
+      "title": "Rememberpedia",
+      "summary": "A website to help you remember things.",
+      "url": "https://rememberpedia.com",
+      "date": "2015-07"
+    }
+  ],
+
+  "recognition": [
+    {
+      "flavor": "award",
+      "from": "Google",
+      "title": "Honorable Mention",
+      "event": "Summer of Code",
+      "date": "2012"
+    },
+    {
+      "flavor": "honor",
+      "from": "Cornell University",
+      "title": "Summa cum laude",
+      "event": "graduation",
+      "date": "2012"
+    }
+  ],
+
+  "interests": [
+    {
+      "name": "reading",
+      "summary": "Jane is a fan of mystery novels and courtroom dramas including Agatha Christie and John Grisham.",
+      "keywords": [ "mystery", "Agatha Christie", "John Grisham" ]
+    },
+    {
+      "name": "hiking",
+      "summary": "Jane enjoys hiking, light mountain climbing, and has four summits under her belt!"
+    },
+    {
+      "name": "yoga"
+    }
+  ]
+
+
+}

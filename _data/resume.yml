@@ -1,0 +1,62 @@
+name: Dale Karp
+phone: (647) 701 - 4151
+email: dale@dale.io
+website: http://dale.io
+
+skills:
+  - Test
+
+experience:
+  - employer: Self-employed
+    url: /
+    position: Freelance Full-stack Developer & Consultant
+    location: Toronto, ON
+    start: 2012-01-01
+    highlights:
+      - Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system
+      - Implemented the client-side code for a shopping cart system for [**BBbarfly.com**](http://bbbarfly.com/)
+
+  - employer: Mozilla Foundation
+    url: //mozilla.org
+    position: Front-end Developer (contract)
+    location: Toronto, ON
+    start: 2013-05-01
+    end: 2014-01-01
+    highlights:
+      - Used designer-built wireframes to build pages for the Webmaker homepage leading up to and after its launch
+      - Assisted in implementing features and fixing cross-browser bugs for the upcoming Webmaker Profiles application
+      - Added new features and fixed existing bugs in a large codebase inherited by the project
+      - Participated in code reviews and bug triages
+
+  - employer: Centre for Development of Open Technology
+    url: //cdot.senecacollege.ca/
+    position: Research Developer
+    location: Toronto, ON
+    start: 2013-01-01
+    end: 2013-04-01
+    highlights:
+      - Assisted in converting the Flash-based BigBlueButton online lecturing system client to HTML5
+      - Fixed client side bugs in an application written with CoffeeScript, Node and Backbone.js
+
+  - employer: Firmex
+    url: //www.firmex.com/
+    position: Developer (co-op)
+    location: Toronto, ON
+    start: 2011-09-01
+    end: 2012-04-01
+    highlights:
+      - Wrote a client-facing reporting tool that integrated with the product to display the latest data room metrics
+      - Wrote tests for the application front-end and worked with the development team to resolve any bugs found
+
+education:
+  - school: Seneca College
+    program: Computer Programming & Analysis
+    location: Toronto, ON
+    start: 2010-01-01
+    end: 2013-04-01
+    highlights:
+      - Peer Tutor
+      - Game Development Club Vice-President (Summer 2011)
+      - President's Honour List (Winter 2011)
+      - Faculty Book Price - CPA (Winter 2011)
+      - Graduated with High Honours

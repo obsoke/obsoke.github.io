@@ -1,0 +1,84 @@
+---
+layout: default
+title: Resume
+---
+<div id="resume" class="resume">
+    <div class="resume-header">
+        <h1 class="name">{{ site.data.resume.name }}</h1>
+        <div class="meta">
+            <ul>
+                <li>email: {{ site.data.resume.email }}</li>
+                <li>phone: {{ site.data.resume.phone }}</li>
+                <li>web: <a href="{{ site.data.resume.website }}">{{ site.data.resume.website }}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <span>Technical Skills</span>
+    </div>
+
+    <div class="section-title">
+        <span>Experience</span>
+    </div>
+    <div class="experience">
+        {% for job in site.data.resume.experience %}
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="employer">
+                    <a href="{{ job.url }}"><strong>{{ job.employer}}</strong></a>
+                </div>
+                <div class="duration">
+                    <span>{{ job.start | date: "%b %Y" }} - </span>
+                    {% if job.end != null %}
+                    <span>{{ job.end | date: "%b %Y" }}</span>
+                    {% else %}
+                    <span>Present</span>
+                    {% endif %}
+                </div>
+                <div class="position">{{ job.position}}</div>
+                <div class="location">{{ job.location}}</div>
+            </div>
+            <ul>
+            {% for highlight in job.highlights %}
+                <li>{{ highlight |  markdownify }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="section-title">
+        <span>Education</span>
+    </div>
+    <div class="experience">
+        {% for edu in site.data.resume.education %}
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="employer">
+                    <strong>{{ edu.school}}</strong>
+                </div>
+                <div class="duration">
+                    <span>{{ edu.start | date: "%b %Y" }} - </span>
+                    {% if edu.end != null %}
+                    <span>{{ edu.end | date: "%b %Y" }}</span>
+                    {% else %}
+                    <span>Present</span>
+                    {% endif %}
+                </div>
+                <div class="position">{{ edu.program}}</div>
+                <div class="location">{{ edu.location}}</div>
+            </div>
+            <ul>
+            {% for highlight in edu.highlights %}
+                <li>{{ highlight |  markdownify }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="print">
+    <a href="/static/files/resume_dale-karp.pdf">Download resume as PDF.</a>
+</div>

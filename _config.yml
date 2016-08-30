@@ -24,7 +24,7 @@ highlighter: rouge
 permalink: none
 
 # exclude files like gemfile from final build
-exclude: ["Gemfile", "Gemfile.lock", "README.md"]
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "CNAME"]
 timezone: America/Toronto
 
 # Build settings

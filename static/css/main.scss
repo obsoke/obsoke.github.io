@@ -110,6 +110,7 @@ header {
             }
         }
     }
+
 }
 
 footer {
@@ -287,6 +288,20 @@ footer {
             }
         }
     }
+
+    .skills {
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+
+            @media (min-width: $on-laptop) {
+                flex-direction: row;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+
 }
 
 .print {
@@ -298,4 +313,15 @@ code:not([class^="language-"]) {
     color: $alt-text-colour;
     background-color: $alt-background-colour;
     padding: 0.25em;
+}
+
+@media print {
+    body, a {
+        color: black;
+        background-color: white;
+    }
+
+    header, footer, .print {
+        display: none;
+    }
 }

@@ -4,7 +4,37 @@ email: dale@dale.io
 website: http://dale.io
 
 skills:
-  - Test
+  - category: Languages
+    list:
+      - JavaScript
+      - Rust
+      - Python
+      - C++
+      - C#
+
+  - category: Front-end libraries
+    list:
+      - React.js
+      - Angular.js 1.x
+      - Backbone.js
+      - Vanilla ES6
+
+  - category: Back-end frameworks
+    list:
+      - Express.js
+      - Koa.js
+      - Django
+
+  - category: OS & Other Tools
+    list:
+      - GNU/Linux
+      - MacOS
+      - Emacs & vim
+      - Git
+      - nginx
+      - PostgreSQL
+      - MongoDB
+      - OpenGL
 
 experience:
   - employer: Self-employed
@@ -45,8 +75,9 @@ experience:
     start: 2011-09-01
     end: 2012-04-01
     highlights:
-      - Wrote a client-facing reporting tool that integrated with the product to display the latest data room metrics
-      - Wrote tests for the application front-end and worked with the development team to resolve any bugs found
+      - Designed and implemented a new statistics page using JavaScript and the Google Charts API. The feature is customer-facing to a user base of at least 125, 000 people worldwide.
+      - Fixed client side bugs related to JavaScript and CSS in the front-end application
+      - Researched viability of using Riak as a persistent storage for user data
 
 education:
   - school: Seneca College

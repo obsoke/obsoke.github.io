@@ -17,6 +17,24 @@ title: Resume
     <div class="section-title">
         <span>Technical Skills</span>
     </div>
+    <div class="skills">
+        {% for skill in site.data.resume.skills %}
+        <div class="skill-list">
+            <strong class="category-name">{{skill.category}}:&nbsp;</strong>
+            <div class="skill-listing">
+            {% for skill_item in skill.list %}
+                {% if forloop.last != true %}
+                {{ skill_item }},
+                {% else %}
+                {{ skill_item }}
+                {% endif %}
+                
+            {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
 
     <div class="section-title">
         <span>Experience</span>

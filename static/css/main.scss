@@ -61,8 +61,12 @@ a:hover {
     text-decoration: underline;
 }
 
-header {
-    padding: 1em;
+.header {
+    margin: 1em 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
 
     .logo-link {
         display: block;
@@ -83,21 +87,18 @@ header {
         padding-left: 0;
 
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
 
         a {
             padding: 0.25em 0.25em;
         }
 
         li {
-            margin: 10px 0;
+            margin: 1em;
         }
     }
 
     @media (min-width: $on-laptop) {
-        padding: 30px;
+        justify-content: space-between;
 
         .nav {
             flex-direction: row;
@@ -105,7 +106,6 @@ header {
 
             li {
                 display: inline-block;
-                margin-bottom: 0;
                 padding-right: 15px;
             }
         }

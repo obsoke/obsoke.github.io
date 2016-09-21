@@ -70,7 +70,7 @@ a:hover {
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .logo-link {
         display: block;
@@ -103,8 +103,6 @@ a:hover {
     }
 
     @media (min-width: $on-laptop) {
-        justify-content: space-between;
-
         .nav {
             flex-direction: row;
             justify-content: center;

@@ -7,10 +7,11 @@ skills:
   - category: Languages
     list:
       - JavaScript
-      - Rust
       - Python
+      - Rust
       - C++
       - C#
+      - Java
 
   - category: Front-end libraries
     list:
@@ -21,20 +22,19 @@ skills:
 
   - category: Back-end frameworks
     list:
+      - Django
       - Express.js
       - Koa.js
-      - Django
 
   - category: OS & Other Tools
     list:
       - GNU/Linux
-      - MacOS
-      - Emacs & vim
       - Git
       - nginx
       - PostgreSQL
       - MongoDB
       - OpenGL
+      - Emacs & vim
 
 experience:
   - employer: Self-employed

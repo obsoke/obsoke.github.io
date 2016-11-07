@@ -314,7 +314,7 @@ footer {
     text-align: center;
 }
 
-code:not([class^="language-"]) {
+code[class*="highlighter-rouge"] {
     color: $alt-text-colour;
     background-color: $alt-background-colour;
     padding: 0.25em;

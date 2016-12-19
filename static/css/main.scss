@@ -326,7 +326,7 @@ code[class*="highlighter-rouge"] {
         background-color: white;
     }
 
-    header, footer, .print {
+    .header, .footer, .print {
         display: none;
     }
 
@@ -339,5 +339,9 @@ code[class*="highlighter-rouge"] {
     strong {
         font-weight: normal;
         font-style: italic;
+    }
+
+    @page {
+        margin: 2cm;
     }
 }

@@ -1,5 +1,5 @@
 name: Dale Karp
-email: dale AT [this domain name]
+email: dale@dale.io
 website: http://dale.io
 github: d10p
 
@@ -17,9 +17,8 @@ skills:
     list:
       - React.js
       - Angular.js 1.x
+      - Ionic
       - Backbone.js
-      - Ionic (Cordova)
-      - Vanilla ES6
 
   - category: Back-end frameworks
     list:
@@ -27,31 +26,39 @@ skills:
       - Express.js
       - Koa.js
 
-  - category: OS & Other Tools
+  - category: Tools
     list:
-      - GNU/Linux
       - Git
       - nginx
       - PostgreSQL
       - MongoDB
       - Redis
-      - OpenGL
       - Emacs & vim
+
 
 experience:
   - employer: Self-employed
     url: /
-    position: Freelance Full-stack Developer & Consultant
+    position: Full-stack Developer & Consultant
     location: Toronto, ON
     start: 2012-01-01
     highlights:
+      - Worked with [**HomePerfect**](https://www.homeperfect.ca/) to develop and deploy their web application focusing on construction management
+      - Developed a full stack web solution for an unlaunched startup that deals with helping digitize businesses in the fleet management
       - Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system
-      - Worked with a client to bring their unlaunched startup idea to life
       - Implemented the client-side code for a shopping cart system for [**BBbarfly.com**](http://bbbarfly.com/)
+
+  - employer: kpd-i
+    url: http://www.kpd-i.com/
+    position: Front-end Developer
+    location: Toronto, ON
+    start: 2016-11-01
+    highlights:
+      - Worked on a small team to develop hybrid mobile applications using Ionic
 
   - employer: Mozilla Foundation
     url: //mozilla.org
-    position: Front-end Developer (contract)
+    position: Front-end Developer
     location: Toronto, ON
     start: 2013-05-01
     end: 2014-01-01
@@ -78,9 +85,24 @@ experience:
     start: 2011-09-01
     end: 2012-04-01
     highlights:
-      - Designed and implemented a new statistics page using JavaScript and the Google Charts API. The feature is customer-facing to a user base of at least 125, 000 people worldwide.
+      - Designed and implemented a new statistics page using JavaScript and the Google Charts API. The feature is customer-facing to a user base of at least 125, 000 people worldwide
       - Fixed client side bugs related to JavaScript and CSS in the front-end application
       - Researched viability of using Riak as a persistent storage for user data
+
+
+projects: In my spare time, I enjoy making games. I\'m currently using
+  [Rust](https://www.rust-lang.org/en-US/) to explore both game development and
+  graphics programming. Some of the projects I\'ve finished are [**Adventure**
+  (A text adventure written in Rust)](https://github.com/d10p/adventure),
+  **Pong** ([Unity3D](https://github.com/d10p/pong-unity) /
+  [C++](https://github.com/d10p/pong)), and [**Jump Around** (A platformer
+  written in JS)](https://github.com/d10p/jumparound).
+
+
+  For even more side projects (such as [**Giffy** - the GIF sharing & creation
+  web app](https://github.com/d10p/giffy)) see my
+  [GitHub](https://github.com/d10p).
+
 
 education:
   - school: Seneca College
@@ -92,5 +114,5 @@ education:
       - Peer Tutor
       - Game Development Club Vice-President (Summer 2011)
       - President\'s Honour List (Winter 2011)
-      - Faculty Book Price - CPA (Winter 2011)
+      - Faculty Book Prize - CPA (Winter 2011)
       - Graduated with High Honours

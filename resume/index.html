@@ -98,7 +98,14 @@ title: Resume
         <span>Projects</span>
     </div>
     <div class="experience">
-        {{ site.data.resume.projects | markdownify }}
+        <ul>
+        {% for project in site.data.resume.projects %}
+            <li><a href="{{project.url}}">{{project.name}}</a> - {{project.description}} ({{project.language}})</li>
+        {% endfor %}
+        </ul>
+        <p>
+            For a wider selection of projects and code check out my <a href="https://github.com/d10p">GitHub</a>.
+        </p>
     </div>
 </div>
 

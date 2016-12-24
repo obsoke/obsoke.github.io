@@ -326,6 +326,11 @@ code[class*="highlighter-rouge"] {
         background-color: white;
     }
 
+    .experience {
+        a:after{content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;}
+    }
+
+
     .header, .footer, .print {
         display: none;
     }

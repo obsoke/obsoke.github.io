@@ -23,8 +23,8 @@ skills:
   - category: Back-end frameworks
     list:
       - Django
-      - Express.js
       - Koa.js
+      - Express.js
 
   - category: Tools
     list:
@@ -38,26 +38,19 @@ skills:
 
 experience:
   - employer: Self-employed
-    url: /
+    url: http://dale.io
     position: Full-stack Developer & Consultant
     location: Toronto, ON
     start: 2012-01-01
     highlights:
+      - Assisted a digital agency in developing a hybrid mobile application for a large medical conference
       - Worked with [**HomePerfect**](https://www.homeperfect.ca/) to develop and deploy their web application focusing on construction management
       - Developed a full stack web solution for an unlaunched startup that deals with helping digitize businesses in the fleet management
       - Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system
       - Implemented the client-side code for a shopping cart system for [**BBbarfly.com**](http://bbbarfly.com/)
 
-  - employer: kpd-i
-    url: http://www.kpd-i.com/
-    position: Front-end Developer
-    location: Toronto, ON
-    start: 2016-11-01
-    highlights:
-      - Worked on a small team to develop hybrid mobile applications using Ionic
-
   - employer: Mozilla Foundation
-    url: //mozilla.org
+    url: https://mozilla.org
     position: Front-end Developer
     location: Toronto, ON
     start: 2013-05-01
@@ -69,7 +62,7 @@ experience:
       - Participated in code reviews and bug triages
 
   - employer: Centre for Development of Open Technology
-    url: //cdot.senecacollege.ca/
+    url: http://cdot.senecacollege.ca/
     position: Research Developer
     location: Toronto, ON
     start: 2013-01-01
@@ -79,7 +72,7 @@ experience:
       - Fixed client side bugs in an application written with CoffeeScript, Node and Backbone.js
 
   - employer: Firmex
-    url: //www.firmex.com/
+    url: https://www.firmex.com/
     position: Developer (co-op)
     location: Toronto, ON
     start: 2011-09-01
@@ -90,18 +83,24 @@ experience:
       - Researched viability of using Riak as a persistent storage for user data
 
 
-projects: In my spare time, I enjoy making games. I\'m currently using
-  [Rust](https://www.rust-lang.org/en-US/) to explore both game development and
-  graphics programming. Some of the projects I\'ve finished are [**Adventure**
-  (A text adventure written in Rust)](https://github.com/d10p/adventure),
-  **Pong** ([Unity3D](https://github.com/d10p/pong-unity) /
-  [C++](https://github.com/d10p/pong)), and [**Jump Around** (A platformer
-  written in JS)](https://github.com/d10p/jumparound).
+projects:
+  - name: Adventure!
+    description: A text adventure game
+    language: Rust
+    url: https://github.com/d10p/adventure
+  - name: Giffy
+    description: A GIF hosting & creation service
+    language: JavaScript
+    url: https://github.com/d10p/giffy
+  - name: Jump Around
+    description: A platformer using Phaser.io
+    language: JavaScript
+    url: https://github.com/d10p/jumparound
+  - name: Pong
+    description: An implementation of the classic game using Unity3D
+    language: C#
+    url: https://github.com/d10p/pong-unity
 
-
-  For even more side projects (such as [**Giffy** - the GIF sharing & creation
-  web app](https://github.com/d10p/giffy)) see my
-  [GitHub](https://github.com/d10p).
 
 
 education:

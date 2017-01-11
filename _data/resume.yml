@@ -1,7 +1,7 @@
 name: Dale Karp
 email: dale@dale.io
 website: http://dale.io
-github: d10p
+github: obsoke
 
 skills:
   - category: Languages
@@ -87,19 +87,19 @@ projects:
   - name: Adventure!
     description: A text adventure game
     language: Rust
-    url: https://github.com/d10p/adventure
+    url: https://github.com/obsoke/adventure
   - name: Giffy
     description: A GIF hosting & creation service
     language: JavaScript
-    url: https://github.com/d10p/giffy
+    url: https://github.com/obsoke/giffy
   - name: Jump Around
     description: A platformer using Phaser.io
     language: JavaScript
-    url: https://github.com/d10p/jumparound
+    url: https://github.com/obsoke/jumparound
   - name: Pong
     description: An implementation of the classic game using Unity3D
     language: C#
-    url: https://github.com/d10p/pong-unity
+    url: https://github.com/obsoke/pong-unity
 
 
 

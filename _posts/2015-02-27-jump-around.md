@@ -8,7 +8,7 @@ tags: [projects, open-source, postmortem, gamedev]
 A few months ago, [I wrote a blog post](http://dale.io/2014/11/21/playtime-with-phaser.html) about my experience playing around with the
 Phaser game engine. I ended up making a short 2D platformer game
 called [Jump Around](http://lab.dale.io/games/jumparound/). I've uploaded
-[the source onto GitHub](https://github.com/daleee/jumparound) for
+[the source onto GitHub](https://github.com/obsoke/jumparound) for
 those who are interested in taking a peek.  It was a great experience
 in which I learnt quite a bit, so without further ado&#x2026;
 
@@ -178,4 +178,4 @@ desktops rather than the web). I plan on reading some of the excellent
 architecture works and how things fit together.
 
 So that's Jump Around! Feel free to [try the game out](http://lab.dale.io/games/jumparound/) and [check out the
-source](https://github.com/daleee/jumparound) if you're interested.
+source](https://github.com/obsoke/jumparound) if you're interested.

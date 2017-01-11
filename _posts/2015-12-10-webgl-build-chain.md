@@ -19,7 +19,7 @@ ecosystem. "Since it helped make my React-based development smooth as butter," I
 
 This post follows the steps and rationale used to build a Webpack-based boilerplate for WebGL. If
 you just want to look at the code, you can
-[grab the source here](https://github.com/daleee/webgl-webpack-boilerplate).
+[grab the source here](https://github.com/obsoke/webgl-webpack-boilerplate).
 
 ### Getting Started
 
@@ -87,7 +87,7 @@ At this point, I usually like to open `package.json` and start making some edits
   "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daleee/webgl-webpack-boilerplate"
+    "url": "https://github.com/obsoke/webgl-webpack-boilerplate"
   },
   "devDependencies": {
     "babel-core": "^6.1.19",
@@ -364,7 +364,7 @@ around everything needed to render a simple triangle in shader-based GL can be a
 once. Once you get your head around those concepts, though, then what? What's the best way to deal
 with shaders moving forward as a project scales? I'm not claiming this boilerplate is anywhere close
 to the best, but for me it works. Hopefully it does for you too (and if it doesn't, please open an
-issue/PR on the [GitHub repo](https://github.com/daleee/webpack-webgl-boilerplate) and let me know).
+issue/PR on the [GitHub repo](https://github.com/obsoke/webpack-webgl-boilerplate) and let me know).
 
 ### Mini-example: Hello Triangle
 
@@ -392,4 +392,4 @@ let program = createProgramFromGLSL(gl, boxVertShaderSource, boxFragShaderSource
 
 I hope you found this useful in some way. If you have any suggestions on how to improve the
 boilerplate, please open an issue on the
-[GitHub repo](https://github.com/daleee/webpack-webgl-boilerplate).
+[GitHub repo](https://github.com/obsoke/webpack-webgl-boilerplate).

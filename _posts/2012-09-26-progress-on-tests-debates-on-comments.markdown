@@ -6,7 +6,7 @@ date: 2012-09-26 23:30:00
 ---
 
 ### Progress on WebVTT Cue Time Conformance Tests
-I just finished writing up a bunch of cue timer tests for the WebVTT test suite we are building in OSD600. My group and I have been documenting our progress on our [wiki page](http://zenit.senecac.on.ca/wiki/index.php/Cue_Times), and committing our tests to [my fork](https://github.com/daliuss/webvtt/tree/master/test/spec) of [rillian's webvtt](https://github.com/rillian/webvtt) repo on GitHub. I was worried that I wouldn't be able to think of any tests to write, but reading all the sections on timestamp syntax in the [WebVTT draft spec](http://dev.w3.org/html5/webvtt/) a few times helped generate a few good ones.
+I just finished writing up a bunch of cue timer tests for the WebVTT test suite we are building in OSD600. My group and I have been documenting our progress on our [wiki page](http://zenit.senecac.on.ca/wiki/index.php/Cue_Times), and committing our tests to [my fork](https://github.com/obsoke/webvtt/tree/master/test/spec) of [rillian's webvtt](https://github.com/rillian/webvtt) repo on GitHub. I was worried that I wouldn't be able to think of any tests to write, but reading all the sections on timestamp syntax in the [WebVTT draft spec](http://dev.w3.org/html5/webvtt/) a few times helped generate a few good ones.
 
 Our group has a pretty good review system in place, in my humble opinion. We add our tests to a table in the wiki as they are done. We have a column in our table for Peer Review, which another team member will fill out once they have 'signed off' on a test. This way, everything keeps track of itself in a way, and it is easy to see what is left to be done or what tests still need peer review. The use of wikis as a collaborative tool is awesome!
 

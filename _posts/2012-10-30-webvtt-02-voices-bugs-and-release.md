@@ -70,8 +70,8 @@ allowing nested voice tags! Jordan contributed the code for this one.
 Thanks dude!
 
 Links:
-* [Issue](https://github.com/daliuss/node-webvtt/issues/4)
-* [Pull request](https://github.com/daliuss/node-webvtt/pull/7)
+* [Issue](https://github.com/obsoke/node-webvtt/issues/4)
+* [Pull request](https://github.com/obsoke/node-webvtt/pull/7)
 
 ### The Other Fixes
 I just wanted to recap what else I did for release 0.2.
@@ -80,14 +80,14 @@ WebVTT data, regardless of line endings. Thanks for Caitlin for help on
 fine tuning the regular expression.
 
 Links:
-* [Issue](https://github.com/daliuss/webvtt/issues/2)
+* [Issue](https://github.com/obsoke/webvtt/issues/2)
 * [Pull request](https://github.com/humphd/webvtt/pull/36)
 
 I also fixed the validator not accepting valid escape values for
 non-breaking whitespace and the right-to-left/left-to-right marker.
 
 Links:
-* [Issue](https://github.com/daliuss/node-webvtt/issues/5)
+* [Issue](https://github.com/obsoke/node-webvtt/issues/5)
 * [Pull Request](https://github.com/humphd/node-webvtt/pull/1)
 
 I have to open another pull request moving the rest of the tests from

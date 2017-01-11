@@ -25,7 +25,7 @@ all of the **active** cues; that is, cues that has start time prior to *currentT
 an end time after *currentTime*.
 
 You can see the full patch I cut against
-a version of mozilla-central from last night [here](https://gist.github.com/daliuss/4950639).
+a version of mozilla-central from last night [here](https://gist.github.com/obsoke/4950639).
 I've also posted the patch on Bugzilla, you can see that [right here](https://bugzilla.mozilla.org/show_bug.cgi?id=833385)
 
 ### Challenges

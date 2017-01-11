@@ -1,4 +1,4 @@
----
+
 layout: post
 title: Giffy&#58; A Postmortem
 tags: [open-source, giffy, projects, postmortem]
@@ -128,7 +128,7 @@ script](https://github.com/flyingsparx/s3upload-coffee-javascript). I quickly ra
 not getting as much metadata as I would have liked about the file with
 the upload completion callback, or not supporting the ability to
 upload a binary image blob to S3. I ended up forking the repo and made
-the necessary adjustments, which you can find [here](https://github.com/daleee/s3upload-coffee-javascript).
+the necessary adjustments, which you can find [here](https://github.com/obsoke/s3upload-coffee-javascript).
 
 While this solution is novel, I kind of regret designing it this
 way. This has to due with how I now feel about gifs in general. Gifs
@@ -191,7 +191,7 @@ that it's finally over, the satisfaction of putting the 'Complete'
 label on a project makes it all feel worth it. Kinda weird how that
 happens.
 
-Feel free to check out the source code [on my GitHub repo](https://github.com/daleee/giffy). A [demo of
+Feel free to check out the source code [on my GitHub repo](https://github.com/obsoke/giffy). A [demo of
 Giffy](http://giffy.dale.io/) is also available. I'll be writing a cron script to clean out
 the database & S3 bucket every few days. Please don't abuse the demo
 site! Feel free to fork, open pull requests, or leave feedback!

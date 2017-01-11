@@ -14,7 +14,7 @@ submitted the 4th version of my patch Wednesday night.  This patch contained the
 fixes requested by Ms2ger. The Bugzilla thread, along with the patches I submitted
 and discussions had about it, can be found [here](https://bugzilla.mozilla.org/show_bug.cgi?id=833385).
 My GitHub repo / branch containing all my work so far can be found
-[here](https://github.com/daliuss/mozilla-central/tree/new-dev).
+[here](https://github.com/obsoke/mozilla-central/tree/new-dev).
 
 Now for a look at the victories and defeats I've had over the past few weeks,
 how I overcame said defeats, and what's in store for the future.

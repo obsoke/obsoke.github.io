@@ -34,7 +34,7 @@ status, results = commands.getstatusoutput("webvtt")
 
 I only really care about the value of status for now. If you are interested in what the method does, check out the [documentation](http://docs.python.org/library/commands.html). Finding what the correct value of status should be for a program that does not exist was easy; I just played with the method in Python's REPL. Also, this [random blog post](http://shortrecipes.blogspot.ca/2008/11/python-ossystem-return-32512.html) seems to confirm it as well. Thanks W!
 
-After that, I thought it was pretty much ready. If you're interested in seeing [my copy](https://github.com/daliuss/node-webvtt/blob/master/tests/test.py) of the script, or David's [much superior version](https://github.com/humphd/webvtt/blob/seneca/test/spec/run-tests-js.py), check them out!
+After that, I thought it was pretty much ready. If you're interested in seeing [my copy](https://github.com/obsoke/node-webvtt/blob/master/tests/test.py) of the script, or David's [much superior version](https://github.com/humphd/webvtt/blob/seneca/test/spec/run-tests-js.py), check them out!
 
 ### The Task at Hand
 I currently have two tasks. Firstly, the test.py script needs to be patched. Currently, it just grabs all the files in the good and bad directories. A one line conditional checking that the file's extension is .vtt before adding it to the file list is all that will be needed, I thinks.

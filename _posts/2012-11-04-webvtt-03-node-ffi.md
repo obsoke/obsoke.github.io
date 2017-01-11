@@ -4,7 +4,7 @@ tags: [open-source, osd600]
 title: WebVTT 0.3&#58; Node, node-ffi and I
 date: 2012-11-04 17:15:00
 ---
-In addition to continuing to fix bugs in the [WebVTT JavaScript validator](https://github.com/daliuss/node-webvtt/blob/master/lib/parser.js), I
+In addition to continuing to fix bugs in the [WebVTT JavaScript validator](https://github.com/obsoke/node-webvtt/blob/master/lib/parser.js), I
 have decided to take a look at possible ways to write our unit tets. In
 class, Humph mentioned some pretty neat modules for node like
 [node-ffi](https://github.com/rbranson/node-ffi), which allows one to
@@ -16,7 +16,7 @@ tool such as node-ffi, we can write JavaScript that will test
 our C code.
 
 ### Getting started with node-ffi
-The first thing I did was create a new git branch to work off of. You can view that git branch [here](https://github.com/daliuss/webvtt/tree/tests-unit_with_ffi) to track my status!
+The first thing I did was create a new git branch to work off of. You can view that git branch [here](https://github.com/obsoke/webvtt/tree/tests-unit_with_ffi) to track my status!
 I created a new folder within <code>tests</code> called <code>unit</code>. This is
 where my code will live.
 

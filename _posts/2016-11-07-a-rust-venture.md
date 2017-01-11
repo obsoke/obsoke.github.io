@@ -117,7 +117,7 @@ Item {
 
 ... and that's just **one** item! Imagine a whole `Room`, with it's own
 behaviour and items! (Or see for yourself and
-[check out the source file with the levels defined](https://github.com/d10p/adventure/blob/master/src/levels.rs)).
+[check out the source file with the levels defined](https://github.com/obsoke/adventure/blob/master/src/levels.rs)).
 
 Another issue is that this method leads to cases where certain objects that don't use a specific
 callback have empty closures, which makes `rustc` complain about unused
@@ -159,7 +159,7 @@ were to make an 'Adventure! 2.0', I'd make the following changes:
 * Figure out cross-compilation so I can build executables for Windows & MacOS from my Linux desktop
 
 I had fun working on Adventure. If you'd like to check it
-out, [here is the GitHub repo](https://github.com/d10p/adventure). I'd like to
+out, [here is the GitHub repo](https://github.com/obsoke/adventure). I'd like to
 figure out cross-compilation soon to get some binaries up on on the GitHub page.
 My next project will involve *gasp* graphics! Until then...
 

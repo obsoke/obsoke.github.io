@@ -42,7 +42,7 @@ module as a global module): `$ npm install coffee-script -g`
 * I use vim as my primary editor. Vim doesn't support coffee script out of the box, but there is
 a plugin which [enables CoffeeScript syntax](https://github.com/kchmck/vim-coffee-script). I use
 [Vundle](https://github.com/gmarik/vundle) to manage my Vim plugins (of which you can find
-a list of in my [.vimrc dotfile](https://github.com/daliuss/dotfiles/blob/master/vim/vimrc))
+a list of in my [.vimrc dotfile](https://github.com/obsoke/dotfiles/blob/master/vim/vimrc))
 * Let's start playing around! `$ v lol.coffee # opening up a test file. alias v=vim`
 * At the same time, I'm going to tell coffee script to watch that file and to compile the
 .js version in the same directory (in a new terminal): `$ coffee --watch --compile lol.coffee`

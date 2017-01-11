@@ -18,8 +18,8 @@ email: dale@dale.io
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dale.io" # the base hostname & protocol for your site
-twitter_username: its_d10p
-github_username:  d10p
+twitter_username: obsoke
+github_username:  obsoke
 highlighter: rouge
 permalink: none
 

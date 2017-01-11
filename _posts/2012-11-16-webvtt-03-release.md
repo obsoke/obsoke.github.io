@@ -20,4 +20,4 @@ fit for us.
 
 Release 0.3 Stuff:
 * [.gitignore Update Pull Request](https://github.com/humphd/webvtt/pull/43)
-* [Lastest commit](https://github.com/daliuss/webvtt/commit/a9ab50e030e6e042c12e29e7f1e7782bc477d0cd) in my attempt at getting Node-FFI to work with String.h
+* [Lastest commit](https://github.com/obsoke/webvtt/commit/a9ab50e030e6e042c12e29e7f1e7782bc477d0cd) in my attempt at getting Node-FFI to work with String.h

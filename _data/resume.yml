@@ -87,19 +87,19 @@ projects:
   - name: Adventure!
     description: A text adventure game
     language: Rust
-    url: https://github.com/obsoke/adventure
+    url: https://gitlab.com/d10p/adventure
   - name: Giffy
     description: A GIF hosting & creation service
     language: JavaScript
-    url: https://github.com/obsoke/giffy
+    url: https://gitlab.com/d10p/giffy
   - name: Jump Around
     description: A platformer using Phaser.io
     language: JavaScript
-    url: https://github.com/obsoke/jumparound
+    url: https://gitlab.com/d10p/jumparound
   - name: Pong
     description: An implementation of the classic game using Unity3D
     language: C#
-    url: https://github.com/obsoke/pong-unity
+    url: https://gitlab.com/d10p/pong-unity
 
 
 

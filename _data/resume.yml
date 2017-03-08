@@ -33,7 +33,9 @@ skills:
       - PostgreSQL
       - MongoDB
       - Redis
-      - Emacs & vim
+      - Docker
+      - AWS
+      - Emacs
 
 
 experience:

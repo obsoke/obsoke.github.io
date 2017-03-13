@@ -192,6 +192,25 @@ footer {
         border-radius: 5px;
         font-style: italic;
     }
+
+    .comments {
+        display: flex;
+    }
+
+    .comments button {
+        margin: 0 auto;
+        position: relative;
+        color: $main-text-colour;
+        font-size: .9rem;
+        background-color: $main-background-colour;
+        border: 1px solid purple;
+        padding: 1rem;
+
+        &:hover {
+            background-color: darken($main-background-colour, 30%);
+            cursor: pointer;
+        }
+    }
 }
 
 .resume {

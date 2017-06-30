@@ -357,6 +357,9 @@ code[class*="highlighter-rouge"] {
     .resume {
         .section-title {
             border-bottom: 1px solid black;
+            span {
+                background-color: white;
+            }
         }
     }
 

@@ -7,11 +7,10 @@ skills:
   - category: Languages
     list:
       - JavaScript
-      - Python
       - Rust
-      - C++
+      - Python
       - C#
-      - Java
+      - C/C++
 
   - category: Front-end libraries
     list:
@@ -31,7 +30,7 @@ skills:
       - Git
       - nginx
       - PostgreSQL
-      - MongoDB
+      - GraphQL
       - Redis
       - Docker
       - AWS
@@ -45,6 +44,7 @@ experience:
     location: Toronto, ON
     start: 2012-01-01
     highlights:
+      - As a part of a team, worked to create various user & admin-facing features for the video sharing community [**Klick Ideas Exchange**](https://idx.klick.com/)
       - Assisted a digital agency in developing a hybrid mobile application for a large medical conference
       - Worked with [**HomePerfect**](https://www.homeperfect.ca/) to develop and deploy their web application focusing on construction management
       - Developed a full stack web solution for an unlaunched startup that deals with helping digitize businesses in the fleet management

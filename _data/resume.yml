@@ -86,6 +86,10 @@ experience:
 
 
 projects:
+  - name: Rustris
+    description: A Tetris clone
+    language: Rust
+    url: https://gitlab.com/obsoke/rustris
   - name: Adventure!
     description: A text adventure game
     language: Rust

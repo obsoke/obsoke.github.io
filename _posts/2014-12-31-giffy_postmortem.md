@@ -1,4 +1,4 @@
-
+---
 layout: post
 title: Giffy&#58; A Postmortem
 tags: [open-source, giffy, projects, postmortem]

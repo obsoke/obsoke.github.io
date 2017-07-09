@@ -12,8 +12,10 @@ following for over 30 years and it's still going strong. For my next Rust-based
 game project, I decided to make my own version of Tetris with basic gameplay
 features, a menu screen and game ending states. After a month of working on it
 sporadically, I managed to get the project into a state I'm okay with releasing
-into the wild. Here are some of my thoughts on challenges faced & choices made
-during development.
+into the wild (The source code is available
+on [GitHub](https://github.com/obsoke/rustris)
+or [GitLab](https://gitlab.com/obsoke/rustris)). Here are some of my thoughts on
+challenges faced & choices made during development.
 
 ## Goals
 
@@ -139,7 +141,7 @@ Tetris is a fun game to write in Rust. I don't think that my code is some kind
 of incredible work of art, a standard that other code should be judged against
 (if anything, it's probably the opposite) but I had lots of fun and I learned
 quite a bit about making games, making games in Rust and Rust itself. That was
-my goal, so mission accomplished! You check out the source code
+my goal, so mission accomplished! You can check out the source code
 on [GitHub](https://github.com/obsoke/rustris)
 or [GitLab](https://gitlab.com/obsoke/rustris). I don't have access to a Windows
 or Mac right now so I unfortunately cannot produce any binaries to distribute

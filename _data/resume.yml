@@ -6,7 +6,7 @@ github: obsoke
 skills:
   - category: Languages
     list:
-      - JavaScript
+      - JavaScript/TypeScript
       - Rust
       - Python
       - C#
@@ -16,33 +16,40 @@ skills:
     list:
       - React.js
       - Angular.js 1.x
-      - Ionic
       - Backbone.js
+      - Ionic
 
   - category: Back-end frameworks
     list:
-      - Django
       - Koa.js
       - Express.js
+      - Django
 
   - category: Tools
     list:
       - Git
       - nginx
       - PostgreSQL
-      - GraphQL
-      - Redis
       - Docker
       - AWS
       - Emacs
 
 
 experience:
+  - employer: Nielsen
+    url: http://www.nielsen.com/
+    position: Software Engineer
+    location: Markham, ON
+    start: 2017-10-01
+    highlights:
+      - Developing internal full-stack solutions to help automate what were manual, time-consuming tasks in order to free up developer time
+
   - employer: Self-employed
     url: http://dale.io
     position: Full-stack Developer & Consultant
     location: Toronto, ON
     start: 2012-01-01
+    end: 2017-09-30
     highlights:
       - As a part of a team, worked to create various user & admin-facing features for the video sharing community [**Klick Ideas Exchange**](https://idx.klick.com/)
       - Assisted a digital agency in developing a hybrid mobile application for a large medical conference

@@ -158,5 +158,7 @@ great framework to use to make good games easily.
 [^1]: For states with more input such as my `PlayState`, I threw all the
     potential state `bool` into its own struct - makes the code easier to read,
     in my opinion.
+
 [^2]: Wrapped in ggez's custom `Result` type, `GameResult`.
+
 [^3]: Yes. Just "simply" implement it. You know, easy!

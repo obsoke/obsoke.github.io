@@ -2,7 +2,7 @@ title: dale.io
 email: dale@dale.io
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dale.io" # the base hostname & protocol for your site
+url: "https://dale.io" # the base hostname & protocol for your site
 lsi: false
 safe: true
 twitter_username: obsoke
@@ -20,7 +20,7 @@ markdown: kramdown
 old_post_cutoff: 2012-01-23
 
 # plugins
-gems:
+plugins:
    - jekyll-mentions
    - jemoji
    - jekyll-redirect-from

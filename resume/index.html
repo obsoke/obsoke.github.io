@@ -99,7 +99,7 @@ title: Resume
     <div class="experience">
         <ul>
         {% for project in site.data.resume.projects %}
-            <li><a href="{{project.url}}">{{project.name}}</a> - {{project.description}} ({{project.language}})</li>
+            <li><a href="{{project.url}}"><strong>{{project.name}}</strong></a> - {{project.description}} ({{project.language}})</li>
         {% endfor %}
         </ul>
         <p>

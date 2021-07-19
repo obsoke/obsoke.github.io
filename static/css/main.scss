@@ -343,6 +343,7 @@ code[class*="highlighter-rouge"] {
     body, a {
         color: black;
         background-color: white;
+        font-size: 0.9rem;
     }
 
     .experience {
@@ -355,17 +356,40 @@ code[class*="highlighter-rouge"] {
     }
 
     .resume {
+        .resume-header h1 {
+            font-size: 40px;
+
+        }
         .section-title {
             border-bottom: 1px solid black;
+
             span {
                 background-color: white;
             }
+        }
+
+        .category-name, .employer strong, .experience li strong{
+            font-style: unset;
+            font-weight: bold;
         }
     }
 
     strong {
         font-weight: normal;
         font-style: italic;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2 {
+        font-size: 14pt;
+        margin-top: 25px;
+    }
+
+    aside h2 {
+        font-size: 18pt;
     }
 
     @page {

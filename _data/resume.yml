@@ -1,5 +1,5 @@
 name: Dale Karp
-email: dale@dale.io
+email: dale at dale dot io
 website: https://dale.io
 github: obsoke
 
@@ -26,7 +26,6 @@ skills:
       - nginx
       - Docker
 
-
 experience:
   - employer: Nielsen
     url: http://www.nielsen.com/
@@ -34,10 +33,10 @@ experience:
     location: Markham, ON
     start: 2017-10-01
     highlights:
-      - Developed internal full-stack application with React & Node.js to automate manual tasks in order to free up data analyst time
-      - As a part of a team, developed a set of systems in Go used to process confidential data in a black box
-      - Assisted in developing and debugging widely-distributed JavaScript code, while also creating testing scenarios, participating in external audits and rewriting modern code in ES3 to run on the widest selection of browsers possible
-      - Worked on a wide variety of other projects such as creating Android applications, inheriting and mainting Scala-based wrapping services, setting up CI/CD pipelines for tests, developing microservices as AWS Lambdas and more
+      - Developed an internal full-stack application with React & Node.js to automate manual tasks to give productive time back to data analysts
+      - Worked with a team to develop a set of systems used to process client data in a confidential environment on Google Cloud Platform, creating a valuable new product
+      - Assisted in developing and debugging ad viewability code, while also creating web and mobile testing scenarios and assisting with external audits
+      - Contributed multiple components to an in-house testing platform, including one responsible for executing unit tests
 
   - employer: Self-employed
     url: http://dale.io
@@ -50,7 +49,7 @@ experience:
       - Assisted a digital agency in developing a hybrid mobile application for a large medical conference
       - Worked with [**HomePerfect**](https://www.homeperfect.ca/) to develop and deploy their web application focusing on construction management
       - Developed a full stack web solution for an unlaunched startup that deals with helping digitize businesses in the fleet management
-      - Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system
+      # - Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system
       #- Implemented the client-side code for a shopping cart system for [**BBbarfly.com**](http://bbbarfly.com/)
 
   - employer: Mozilla Foundation
@@ -63,7 +62,7 @@ experience:
       - Used designer-built wireframes to build pages for the Webmaker homepage leading up to and after its launch
       - Assisted in implementing features and fixing cross-browser bugs for the upcoming Webmaker Profiles application
       - Added new features and fixed existing bugs in a large codebase inherited by the project
-      - Participated in code reviews and bug triages
+      - Participated in code reviews and bug triage
 
   # - employer: Centre for Development of Open Technology
   #   url: http://cdot.senecacollege.ca/
@@ -86,7 +85,6 @@ experience:
   #     - Fixed client side bugs related to JavaScript and CSS in the front-end application
   #     - Researched viability of using Riak as a persistent storage for user data
 
-
 projects:
   - name: Rustris
     description: A Tetris clone
@@ -108,8 +106,6 @@ projects:
     description: An implementation of the classic game using Unity3D
     language: C#
     url: https://github.com/obsoke/pong-unity
-
-
 
 education:
   - school: Seneca College

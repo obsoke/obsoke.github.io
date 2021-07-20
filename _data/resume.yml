@@ -33,8 +33,8 @@ experience:
     location: Markham, ON
     start: 2017-10-01
     highlights:
-      - Developed an internal full-stack application with React & Node.js to automate manual tasks to give productive time back to data analysts
-      - Worked with a team to develop a set of systems used to process client data in a confidential environment on Google Cloud Platform, creating a valuable new product
+      - Developed a platform for automating data analysis tasks with React & Node.js to increase data analyst productivity
+      - Worked with a team to develop a set of systems used to process client data in a confidential environment on Google Cloud Platform, creating a valuable new product category
       - Assisted in developing and debugging ad viewability code, while also creating web and mobile testing scenarios and assisting with external audits
       - Contributed multiple components to an in-house testing platform, including one responsible for executing unit tests
 
@@ -47,14 +47,12 @@ experience:
     highlights:
       - As a part of a team, worked to create various user & admin-facing features for the video sharing community [**Klick Ideas Exchange**](https://idx.klick.com/)
       - Assisted a digital agency in developing a hybrid mobile application for a large medical conference
-      - Worked with [**HomePerfect**](https://www.homeperfect.ca/) to develop and deploy their web application focusing on construction management
+      - Worked with a startup to develop and deploy their web application focusing on construction management
       - Developed a full stack web solution for an unlaunched startup that deals with helping digitize businesses in the fleet management
-      # - Created a mobile-friendly web application for startup [**Kranium**](https://kraniumnetwork.com/), including a custom user messaging system
-      #- Implemented the client-side code for a shopping cart system for [**BBbarfly.com**](http://bbbarfly.com/)
 
   - employer: Mozilla Foundation
     url: https://mozilla.org
-    position: Front-end Developer
+    position: Front-end Developer (contract)
     location: Toronto, ON
     start: 2013-05-01
     end: 2014-01-01

@@ -27,11 +27,18 @@ skills:
       - Docker
 
 experience:
+  - employer: Test Double
+    url: https://testdouble.com/
+    position: Senior Software Consultant
+    location: Remote
+    start: 2021-09-27
+
   - employer: Nielsen
-    url: http://www.nielsen.com/
+    url: https://www.nielsen.com/
     position: Software Engineer
     location: Markham, ON
     start: 2017-10-01
+    end: 2021-09-17
     highlights:
       - Developed a platform for automating data analysis tasks with React & Node.js to increase data analyst productivity
       - Worked with a team to develop a set of systems used to process client data in a confidential environment on Google Cloud Platform, creating a valuable new product category
@@ -39,7 +46,7 @@ experience:
       - Contributed multiple components to an in-house testing platform, including one responsible for executing unit tests
 
   - employer: Self-employed
-    url: http://dale.io
+    url: https://dale.io
     position: Full-stack Developer & Consultant
     location: Toronto, ON
     start: 2012-01-01

@@ -7,8 +7,8 @@ skills:
   - category: Languages
     list:
       - TypeScript
-      - Rust
       - Go
+      - Rust
       - Python
 
   - category: Frameworks & Libraries
@@ -32,6 +32,13 @@ experience:
     position: Senior Software Consultant
     location: Remote
     start: 2021-09-27
+    highlights:
+      - Coached a development team through their transition to a new language stack while assisting with delivery
+      - Assisted in migrating large legacy services to modern tech stacks in order to future-proof codebases
+      - Created a post-deploy end-to-end test pipeline so clients can make changes with confidence
+      - Mentored fresh developers at clients in order to help them become confident contributors
+      - Fixed accessibility violations in order to improve user experiences for all while reducing liability for clients
+      - Iterated quickly on new features and bug fixes across various languages and tech stacks
 
   - employer: Nielsen
     url: https://www.nielsen.com/
